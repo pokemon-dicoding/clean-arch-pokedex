@@ -2,25 +2,17 @@
 //  ContentView.swift
 //  PokeDex
 //
-//  Created by Wahyu Alfandi on 16/08/23.
+//  Created by Wahyu Alfandi on 28/03/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        HomeView()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

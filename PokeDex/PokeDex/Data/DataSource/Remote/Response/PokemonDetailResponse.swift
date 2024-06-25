@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct PokemonDetailResponse: Decodable{
     let id: Int?
     let name: String?
@@ -16,7 +15,6 @@ struct PokemonDetailResponse: Decodable{
     let types: TypeResponses?
     let moves: MovesResponse?
     let abilities: AbilitiesResponse?
-    
 }
 
 struct TypeResponses: Decodable{
@@ -28,7 +26,7 @@ struct TypeResponse: Decodable{
 }
 
 struct MovesResponse: Decodable{
-    let moves: [MovesResponse]?
+    let moves: [MoveResponse]?
 }
 struct MoveResponse: Decodable{
     let name: String?
@@ -37,6 +35,8 @@ struct MoveResponse: Decodable{
 struct AbilitiesResponse: Decodable{
     let abilities: [AbilityResponse]?
 }
+
 struct AbilityResponse: Decodable{
     let name: String?
 }
+

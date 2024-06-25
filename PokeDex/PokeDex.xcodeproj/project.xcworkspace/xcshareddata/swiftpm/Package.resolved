@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "alamofire",
+      "identity" : "mixpanel-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "location" : "https://github.com/mixpanel/mixpanel-swift",
       "state" : {
-        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
-        "version" : "5.7.1"
+        "revision" : "cf569f790c0ec9e9f94f25e56b7ba5762198d34a",
+        "version" : "2.10.4"
       }
     }
   ],

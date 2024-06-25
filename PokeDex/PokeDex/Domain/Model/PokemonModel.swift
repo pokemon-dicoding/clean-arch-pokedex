@@ -7,12 +7,10 @@
 
 import Foundation
 
-
-struct Pokemon: Decodable {
-    let id: String
+struct PokemonModel{
+    let id: Int
     let name: String
-    let imageUrl: String
-    let type: String
+    let type: [String]
     let moves: [String]
     let abilities: [String]
 }

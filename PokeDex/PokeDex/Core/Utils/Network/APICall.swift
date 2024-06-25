@@ -8,27 +8,21 @@
 import Foundation
 
 struct API {
-    
     static let baseUrl = "https://pokeapi.co/api/v2/"
-    
 }
 
 protocol Endpoint {
-    
     var url: String { get }
-    
 }
 
 enum Endpoints {
-    
     enum Gets: Endpoint {
-        case pokemons(limit : Int)
-        case detail(id: Int)
+      case pokemons(offset: Int, limit : Int)
+        
         
         public var url: String {
             switch self {
-                case .pokemons(let limit): return "\(API.baseUrl)pokemon?limit=\(limit)"
-                case .detail(let id): return "\(API.baseUrl)pokemon/\(id)"
+                case .pokemons(let offset, let limit): return "\(API.baseUrl)pokemon?offset=\(offset)&limit=\(limit)"
             }
         }
     }
